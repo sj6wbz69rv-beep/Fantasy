@@ -1,7 +1,7 @@
-# FANTASY — Project Status
+# SMOY — Project Status
 
 ## First playable slice source
-This repository is the home for the FANTASY Unity project.
+This repository is the home for the SMOY Unity project.
 
 The current first-slice source package is a Unity project skeleton for the Neo-City to Research Facility quest: **The Missing Signal**.
 
