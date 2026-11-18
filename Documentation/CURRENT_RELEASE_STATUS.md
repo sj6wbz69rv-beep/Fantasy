@@ -1,5 +1,14 @@
 # SMOY first playable slice — current status
 
+## Source archive audit (static only)
+The prepared CloudReady archive contains:
+- 105 total files, including 63 C# source files.
+- 82 declared C# types, with no duplicate type names found by the static scan.
+- No delimiter-balance issues found by the static scan.
+- Zero generated Unity scene files (`.unity`).
+
+These are source-structure checks only. They do not establish that Unity can import or compile the project.
+
 ## Included in the separate source archive
 - Third-person movement and mobile touch controls.
 - Neo-City and Research Facility scene-builder scripts.
@@ -8,10 +17,10 @@
 - Scene validator and integration documentation.
 
 ## Repository integration status
-This GitHub repository currently contains the project version pin, package manifest, editor cloud pre-export hook, and project documentation. The full gameplay source archive has not yet been committed into `Assets/`.
+This GitHub repository contains the Unity 6.3.28f1 version pin, Unity package manifest, SMOY cloud pre-export hook, and project documentation. The complete gameplay source archive has not yet been committed under `Assets/`.
 
 ## Verification truth
-- The source archive has received static source checks only.
+- The archive passed a lightweight static count/type/delimiter audit.
 - Unity Editor has not been run in this environment.
 - Scene builders and scene validator have not been executed.
 - Unity compilation, Play Mode, iPhone touch/performance testing, iOS signing, and TestFlight/device distribution have not been performed.
