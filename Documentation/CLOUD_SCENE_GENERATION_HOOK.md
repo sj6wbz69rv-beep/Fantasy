@@ -1,4 +1,4 @@
-# FANTASY — Cloud scene-generation hook
+# SMOY — Cloud scene-generation hook
 
 ## What this adds
 The Unity Build Automation pre-export hook at `Assets/Editor/FantasyCloudFirstSliceBuild.cs` runs the existing scene builders in the cloud Unity Editor:
@@ -10,7 +10,7 @@ The Unity Build Automation pre-export hook at `Assets/Editor/FantasyCloudFirstSl
 This removes the need to open the Unity Editor locally just to execute those two menu commands, **once the complete Unity source project is committed and configured in Unity Build Automation**.
 
 ## Required Build Automation configuration
-- Source repository: this private FANTASY repository.
+- Source repository: this private SMOY repository.
 - Unity Editor version: must match the version used by the project.
 - Pre-export method: `FantasyCloudFirstSliceBuild.PreExport`.
 - Build target: iOS.
