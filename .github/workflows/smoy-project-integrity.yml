@@ -1,0 +1,21 @@
+name: SMOY project integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  repository-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out SMOY
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check Unity project completeness
+        run: python Scripts/ci/check_smoy_project.py
