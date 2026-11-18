@@ -12,6 +12,9 @@ public static class FantasyCloudFirstSliceBuild
 {
     public static void PreExport()
     {
+        // Set the player-facing app title for cloud iOS builds.
+        PlayerSettings.productName = "SMOY";
+        Debug.Log("[SMOY] Player product name set to SMOY.");
         Debug.Log("[FANTASY Cloud] Generating Neo-City scene...");
         FantasyNeoCitySceneBuilder.Build();
 
