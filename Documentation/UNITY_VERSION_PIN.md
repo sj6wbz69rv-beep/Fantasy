@@ -1,4 +1,4 @@
-# FANTASY Unity editor baseline
+# SMOY Unity editor baseline
 
 ## Pinned editor
 
